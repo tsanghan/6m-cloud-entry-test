@@ -89,8 +89,7 @@ Alan has deployed his web application to Amazon Web Service. Unfortunately, the 
 
 A - The principle of security is not applied.
 
-B - The principle of observability is not applied.
-==================================================
+***B - The principle of observability is not applied.***
 
 C - The principle of availability is not applied.
 
@@ -99,6 +98,7 @@ D - The principle of performance is not applied.
 *Q5B: What do you suggest could be done to improve the situation?*
 
 ```
+Implement 1 or more of the following,
 AWS CloudTrail (http://aws.amazon.com/cloudtrail/)
 Amazon CloudWatch (http://aws.amazon.com/cloudwatch/)
 AWS X-Ray (http://aws.amazon.com/xray/)
