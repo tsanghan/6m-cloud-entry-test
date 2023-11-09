@@ -35,9 +35,8 @@ Please attempt the solve the problems described:
 What is the Bash command to discover the IP Address of `www.skillsunion.com`?
 
 ```sh
-# Answer here
-```
 dig www.skillsunion.com
+```
 ---
 
 **Question 2 - Copy a Directory**
@@ -45,7 +44,7 @@ dig www.skillsunion.com
 What is the command to copy a directory from `~/my_project` to `/etc/projects`?
 
 ```sh
-# Answer here
+sudo cp -r ~/my_project /etc/projects
 ```
 ---
 
@@ -56,7 +55,11 @@ Implement a bash script that does the follow:
 1. Loop through the array and print each element.
 
 ```sh
-# Answer here
+#!/usr/bin/env bash
+
+mystring="one,two,three"
+myarray=($(echo $mystring | sed 's/,/ /g'))
+for element in ${myarray[@]}; do echo $element; done
 ```
 
 ---
@@ -84,6 +87,7 @@ Alan has deployed his web application to Amazon Web Service. Unfortunately, the 
 A - The principle of security is not applied.
 
 B - The principle of observability is not applied.
+==================================================
 
 C - The principle of availability is not applied.
 
@@ -92,7 +96,9 @@ D - The principle of performance is not applied.
 *Q5B: What do you suggest could be done to improve the situation?*
 
 ```
-Answer here
+AWS CloudTrail (http://aws.amazon.com/cloudtrail/)
+Amazon CloudWatch (http://aws.amazon.com/cloudwatch/)
+AWS X-Ray (http://aws.amazon.com/xray/)
 ```
 
 ---
