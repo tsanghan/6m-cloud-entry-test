@@ -58,8 +58,11 @@ Implement a bash script that does the follow:
 #!/usr/bin/env bash
 
 mystring="one,two,three"
-myarray=($(echo $mystring | sed 's/,/ /g'))
-for element in ${myarray[@]}; do echo $element; done
+myarray=($(echo "$mystring" | sed 's/,/ /g'))
+for element in "${myarray[@]}";
+do
+    echo "$element"
+done
 ```
 
 ---
