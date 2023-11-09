@@ -37,7 +37,7 @@ What is the Bash command to discover the IP Address of `www.skillsunion.com`?
 ```sh
 # Answer here
 ```
-
+dig www.skillsunion.com
 ---
 
 **Question 2 - Copy a Directory**
